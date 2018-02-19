@@ -279,3 +279,19 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+/* ================== Media Queries =============================*/
+@media screen and (max-width: 485px) {
+  .filter-options {
+    padding: 0;
+    overflow: hidden;
+  }
+  .filter-options h2 {
+    text-align: center;
+  }
+  .filter-options select {
+    display: block;
+    margin: auto;
+    margin-bottom: 1em;
+    width: 80%;
+  }
+}
