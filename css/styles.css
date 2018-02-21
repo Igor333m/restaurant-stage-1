@@ -40,7 +40,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   min-height: 100%;
 }
 #footer {
-  background-color: #444;
+  background-color: #252831;
   color: #aaa;
   font-size: 8pt;
   letter-spacing: 1px;
@@ -189,15 +189,35 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
+/* --------------- Grid -----------------------------------*/
+.inside {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 90px 51px auto 65px; 
+}
+.inside header {
+  grid-area: header;
+}
+#maincontent {
+  grid-area: main;
+}
+#map-container {
+  grid-area: map;
+}
+.inside footer {
+  grid-area: footer;
+}
+
+
 .inside header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
+  /*z-index: 1000;*/
 }
 .inside #map-container {
+  border: solid red 1px;
   background: blue none repeat scroll 0 0;
-  height: 87%;
+  height: 100%;
   position: fixed;
   right: 0;
   top: 80px;
@@ -211,6 +231,7 @@ nav h1 a {
 .inside #footer {
   bottom: 0;
   position: absolute;
+  padding: 25px 0;
   width: 50%;
 }
 #restaurant-name {
@@ -280,7 +301,7 @@ nav h1 a {
   color: #666;
 }
 /* ================== Media Queries =============================*/
-@media screen and (max-width: 485px) {
+@media (max-width: 485px) {
   .filter-options {
     padding: 0;
     overflow: hidden;
