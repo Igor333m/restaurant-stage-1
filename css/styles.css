@@ -61,7 +61,7 @@ nav h1 {
 }
 nav h1 a {
   color: #fff;
-  font-size: 1rem;
+  font-size: calc(0.8rem + 0.2vw);
   font-weight: 200;
   letter-spacing: 10px;
   text-transform: uppercase;
