@@ -101,7 +101,7 @@ nav h1 a {
   width: 100%;
   background-color: #3397DB;
   align-items: center;
-  padding-left: 30px;
+
 }
 .filter-options h2 {
   color: white;
@@ -109,6 +109,7 @@ nav h1 a {
   font-weight: normal;
   line-height: 1;
   padding-top: 1em;
+  padding-left: 30px;
 }
 .filter-options select {
   background-color: white;
