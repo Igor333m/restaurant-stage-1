@@ -43,6 +43,9 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   background-color: #f3f3f3;
   min-height: 100%;
 }
+#map-container {
+  display: none;
+}
 #footer {
   background-color: #252831;
   color: #aaa;
@@ -206,9 +209,6 @@ nav h1 a {
 #maincontent {
   grid-area: main;
 }
-#map-container {
-  grid-area: map;
-}
 .inside footer {
   grid-area: foot;
 }
@@ -220,6 +220,8 @@ nav h1 a {
 }
   /* Map use position fixed, not using grid */
 .inside #map-container {
+  display: block;
+  grid-area: map;
   background: blue none repeat scroll 0 0;
   height: 92%;
   position: fixed;
